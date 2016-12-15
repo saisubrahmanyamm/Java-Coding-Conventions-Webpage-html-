@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>File Organization</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+	<div class="head">
+		<h1 id="heading">Java Coding Standards</h1>
+		<div id=button>
+			<ul>
+				<li><a href="Indexpage.html"> Back to Index</a></li>
+			</ul>
+		</div>
+	</div>
+	<h1>2.File Organization</h1>
+	<div id="content">
+		<p class="content">
+			Blank lines are used to separate each section in a file and comment
+			for identifying each section.<br> A file should not more than
+			2000 lines.
+		</p>
+		<h3>2.1 Java Source file</h3>
+		<p class="content">
+			Each file should contain only one public class or interface , but it
+			can contain private class as inner of public class.<br> File
+			name should match with top-level class.
+		</p>
+		<p class="example">
+			public class Sample {....}<br> for the above example the file
+			name should be Sample.java
+		</p>
+		<p class="content">Each source file should follow</p>
+		<ol>
+			<li>Beginning Comments:</li>
+			<p class="content">Source files should begin with a c-style
+				comment that lists the programmer(s), the date, the simple
+				description about the program and copyright</p>
+			<p class="example">
+				/* Programmer name<br> * Date<br> * Purpose of the program<br>
+				* Copyright Notice<br> */
+			</p>
+
+			<li>Package and import statements:</li>
+			<p class="content">First line in the java source file is Package
+				statement and followed by import statement</p>
+			<p class="example">
+				package java.awt;<br> import java.awt.peer.CanvasPeer;
+			</p>
+			<li>Class or interface Declarations</li>
+			<p class="content">The following table describes the parts of a
+				class or interface declaration, in the order that they</p>
+			<table border="1px" style="font-family: Verdana">
+				<tr>
+					<th>Class/Interface Declaration</th>
+					<th>Notes</th>
+				</tr>
+				<tr>
+					<td style="text-align: center;">Class/interface implementation
+						comment (/*...*/), if necessary</td>
+					<td>This comment should contain any class-wide or
+						interface-wide information <br>that wasnot appropriate for
+						the class/interface documentation comment
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">Class (static) variables</td>
+					<td>First the public class variables, then the protected,and
+						then the private</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">Instance variables</td>
+					<td>First public, then protected, and then private.</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">Methods</td>
+					<td>These methods should be grouped by functionality rather
+						than by scope or accessibility.<br> For example, a private
+						class method can be in between two public instance methods.<br>The
+						goal is to make reading and understanding the code easier.
+					</td>
+				</tr>
+			</table>
+		</ol>
+	</div>
+</body>
+</html>

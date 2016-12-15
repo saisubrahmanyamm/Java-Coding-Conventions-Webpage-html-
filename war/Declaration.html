@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Declaration</title>
+<link type="text/css" rel="stylesheet" href="Lastfour.css" />
+</head>
+<body>
+	<div class="head">
+		<h1 id="heading">Java Coding Standards</h1>
+		<div id=button>
+			<ul>
+				<li><a href="Indexpage.html"> Back to Index</a></li>
+			</ul>
+		</div>
+	</div>
+	<h1 style="text-align: center">Declaration</h1>
+	<br>
+	<h2>
+		<p class="slightlyBig">5.1 Number per line</p>
+	</h2>
+	<p class="slightlyBig">
+		One declaration per line is recommended since it encourages
+		commenting.<br>In other words,
+	</p>
+	<p class="slightlySmall">
+		int level; &nbsp;// indentation level<br> int size; // size of
+		table<br>
+	</p>
+	<p class="slightlyBig">is preferred over</p>
+	<p class="slightlySmall">
+		int level, size;<br>
+	</p>
+	<p class="slightlyBig">In absolutely no case should variables and
+		functions be declared on the same line.Example:</p>
+	<p class="slightlySmall">long dbaddr, getDbaddr(); &nbsp;// WRONG!</p>
+	<p class="slightlyBig">Do not put different types on the same line.
+		Example:</p>
+	<p class="slightlySmall">int foo, fooarray[]; &nbsp;//WRONG!</p>
+	<p class="slightlyBig">
+		<strong>Note:</strong> The examples above use one space between the
+		type and the identifier.<br> Another acceptable alternative is to
+		use tabs, e.g.:
+	</p>
+	<p class="slightlySmall">
+		int level; &nbsp;// indentation level <br> int size; // size of
+		table<br> Object currentEntry; &nbsp;// currently selected table
+		entry
+	</p>
+	<br>
+	<h2>
+		<p class="slightlyBig">5.2 Placement</p>
+	</h2>
+	<p class="slightlyBig">Put declarations only at the beginning of
+		blocks. (A block is any code surrounded by curly braces "{" and "}".)
+		Don't wait to declare variables until their first use; it can confuse
+		the unwary programmer and hamper code portability within the scope.</p>
+	<p class="slightlySmall">
+		void MyMethod() {<br> int int1; -------> // beginning of method
+		block<br> if (condition) {<br> int int2; -------> //
+		beginning of "if" block<br> ...<br> }<br> }
+	</p>
+	<p class="slightlyBig">
+		The one exception to the rule is indexes of <em>for</em> loops, which
+		in Java can be declared in the <em>for</em> statement:
+	</p>
+	<p class="slightlySmall">for (int i = 0; i < maxLoops; i++) { ...</p>
+	<p class="slightlyBig">Avoid local declarations that hide
+		declarations at higher levels. For example, do not declare the same
+		variable name in an inner block:</p>
+	<p class="slightlySmall">
+		int count;<br> ...<br> func() {<br> if (condition) {<br>
+		int count; // AVOID!<br> ...<br> }<br> ...<br> }
+	</p>
+	<br>
+	<h2>
+		<p class=" slightlyBig">5.3 Initialization</p>
+	</h2>
+	<p class="slightlyBig">Try to initialize local variables where
+		they're declared. The only reason not to initialize a variable where
+		it's declared is if the initial value depends on some computation
+		occurring first.</p>
+	<br>
+	<h2>
+		<p class=" slightlyBig">5.4 Class and Interface Declarations</p>
+	</h2>
+	<p class="slightlyBig">
+		When coding Java classes and interfaces, the following formatting
+		rules should be followed:<br>
+	<ul class="slightlyBig">
+		<li>No space between a method name and the parenthesis "("
+			starting its parameter list.</li>
+		<li>Open brace "{" appears at the end of the same line as the
+			declaration statement.</li>
+		<li>Closing brace "}" starts a line by itself indented to match
+			its corresponding opening statement, except when it is a null
+			statement the "}" should appear immediately after the "{"</li>
+	</ul>
+	</p>
+	<p class="slightlySmall">
+		class Sample extends Object {<br> int ivar1;<br> int ivar2;<br>
+		Sample(int i, int j) {<br> ivar1 = i;<br> ivar2 = j;<br>
+		}<br> int emptyMethod() {}<br> ...<br> }
+	</p>
+	<ul class="slightlyBig">
+		<li>Methods are separated by a blank line</li>
+	</ul>
+	</p>
+
+</body>
+</html>

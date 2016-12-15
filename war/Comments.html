@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Comments</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+	<div class="head">
+		<h1 id="heading">Java Coding Standards</h1>
+		<div id=button>
+			<ul>
+				<li><a href="Indexpage.html"> Back to Index</a></li>
+			</ul>
+		</div>
+	</div>
+	<h1>4.Comments</h1>
+	<div id="content">
+		<p class="content">
+			Java programs can have two kinds of comments: <br>
+		<h3>1.Implementation Comments:</h3>
+		<br> <span class="content">Implementation comments are
+			mean for commenting out code or for comments about the particular
+			implementation</span> <br>
+		<h3>2.Documentation Comments</h3>
+		<br> <span class="content">Doc comments are meant to
+			describe the specification of the code, from an implementation-free
+			perspective.</span>
+		</p>
+		<h3>4.1 Implementation Comment Formats</h3>
+		<ol>
+			<li>Block Comments</li>
+			<p class="content">Block comments are used to provide
+				descriptions of files, methods, data structures and algorithms.</p>
+			<p class="example">
+				/*<br> * Here is a block comment.<br> */
+			</p>
+			<li>Single-Line Comments</li>
+			<p class="content">Short comments can appear on a single line
+				indented to the level of the code that follows.</p>
+			<p class="example">
+				if (condition) {<br> /* Handle the condition. */<br> ...<br>
+				}
+			</p>
+			<li>Trailing Comments</li>
+			<p class="content">Very short comments can appear on the same
+				line as the code they describe, but should be shifted far enough to
+				separate them from the statements.</p>
+			<p class="example">
+				if (a == 2) {<br> return TRUE;/* special case */ <br> }
+				else {<br> return isprime(a); /* works only for odd a */<br>
+				}
+			</p>
+			<li>End-Of-Line Comments</li>
+			<p class="content">The // comment delimiter begins a comment that
+				continues to the newline. It can comment out a complete line or only
+				a partial line</p>
+			<p class="example">
+				if () {<br> ....<br> }<br> //End of if
+			</p>
+		</ol>
+		<h3>4.2 Documentation Comments</h3>
+		<p class="content">Doc comments describe Java classes, interfaces,
+			constructors, methods, and fields. Each doc comment is set inside the
+			comment delimiters /**...*/, with one comment per API. This comment
+			should appear just before the declaration:</p>
+		<p class="example">
+			/**<br> * The Example class provides ...<br> */<br>
+			class Example { ...
+		</p>
+	</div>
+</body>
+</html>
